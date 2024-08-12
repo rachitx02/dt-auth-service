@@ -1,2 +1,2 @@
-const h = "Rachit";
 console.log("Hi");
+console.log("Bye");
