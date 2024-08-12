@@ -1,3 +1,15 @@
+import app from "./app";
 import { Config } from "./config";
 
-console.log(Config.NODE_ENV);
+const server = async () => {
+  try {
+    app.listen(Config.PORT, () => {
+      console.log(`Listening on ${Config.PORT}`);
+    });
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
+};
+
+server();
