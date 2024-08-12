@@ -1,2 +1,3 @@
-console.log("Hi");
-console.log("Bye");
+import { Config } from "./config";
+
+console.log(Config.NODE_ENV);
